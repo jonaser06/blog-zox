@@ -1,0 +1,96 @@
+/* header */
+.header{
+    width: 100%;
+    height: 50px;
+    background: #000;
+    color: #fff;
+}
+.menu{
+    width: 15%;
+}
+.icon-menu{
+    line-height: 50px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.logo{
+    width: 70%;
+    line-height: 50px;
+    font-size: 2rem;
+}
+.logo a{
+    text-decoration: none;
+    color: #fff;
+}
+.busqueda{
+    width: 15%;
+}
+.icon-search{
+    line-height: 50px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.centrar{
+    text-align: center;
+    height: 100%;
+    float: left;
+}
+/* body */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.portada{
+    position: relative;
+    width: 100%;
+    height: 415px;
+}
+.portada img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.imagen-portada{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.imagen-portada img{
+    position: relative;
+}
+.portada-titulo{
+    position: absolute;
+    width: 100%;
+    height: 215px;
+    background-image: -webkit-linear-gradient(to bottom,rgba(0,0,0,0) 0, rgba(0,0,0,0.6) 50%, rgba(0,0,0,.9) 100%);
+    background-image: -webkit-gradient(linear, center top, center bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,0.9)));
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0) 0, rgba(0,0,0,0.6) 50%, rgba(0,0,0,.9) 100%);
+    left: 0;
+    bottom: 0;
+    padding: 60px 10px 20px;
+    box-sizing: border-box;
+}
+.portada-preview{
+    width: 100%;
+    height: 100%;
+}
+.categoria{
+    color: #0be6af;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+.fecha{
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+.titulo-p{
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0px;
+}
+.bajada{
+    color: #fff;
+}
+/* footer */
