@@ -8,6 +8,21 @@
 .menu{
     width: 15%;
 }
+.nav-menu{
+    display: none;
+}
+
+.portada-preview a{
+    text-decoration: none;
+}
+
+.after{
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    height: 100%;
+}
+
 .icon-menu{
     line-height: 50px;
     color: #fff;
@@ -308,6 +323,55 @@ img{
     img{
         width: 100%;
     }
+    /* click menu */
+    .content::after{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        content: '';
+        display: inline-block;
+        width: 100%;
+        height: 1000px;
+        background: rgba(0,0,0,0.4);
+        cursor: pointer;
+    }
+    /* menu desplegable */
+    .nav-menu{
+        height: 1000px;
+        position: absolute;
+        left: 0px; /* -52% */
+        z-index: 999;
+        display: block;
+        width: 50%;
+        background: #000;
+        -webkit-box-shadow: 6px 3px 19px -2px rgba(0,0,0,0.75);
+        -moz-box-shadow: 6px 3px 19px -2px rgba(0,0,0,0.75);
+        box-shadow: 6px 3px 19px -2px rgba(0,0,0,0.75);
+        transition: left 0.3s;
+    }
+    .left{
+        left: -52% !important;
+    }
+
+    .nav-menu .menu-navegation{
+        margin-top: 10px;
+    }
+    .nav-menu .menu-navegation ul{
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .nav-menu .menu-navegation ul li a{
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        border-bottom: 1px solid rgb(68, 68, 68);
+        color: #fff;
+        margin: 10px 20px;
+    }
 }
 /* Para 480px a 600px */
 @media only screen and (max-width: 600px) and (min-width: 480px) { 
@@ -358,6 +422,56 @@ img{
     }
     .tendencia-item-image img{
         width: 100% !important;
+    }
+
+    /* click menu */
+    .content::after{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        content: '';
+        display: inline-block;
+        width: 100%;
+        height: 1000px;
+        background: rgba(0,0,0,0.4);
+        cursor: pointer;
+    }
+    /* menu desplegable */
+    .nav-menu{
+        height: 1000px;
+        position: absolute;
+        left: 0px; /* -52% */
+        z-index: 999;
+        display: block;
+        width: 50%;
+        background: #000;
+        -webkit-box-shadow: 6px 3px 19px -2px rgba(0,0,0,0.75);
+        -moz-box-shadow: 6px 3px 19px -2px rgba(0,0,0,0.75);
+        box-shadow: 6px 3px 19px -2px rgba(0,0,0,0.75);
+        transition: left 0.3s;
+    }
+    .left{
+        left: -52% !important;
+    }
+
+    .nav-menu .menu-navegation{
+        margin-top: 10px;
+    }
+    .nav-menu .menu-navegation ul{
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .nav-menu .menu-navegation ul li a{
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        border-bottom: 1px solid rgb(68, 68, 68);
+        color: #fff;
+        margin: 10px 20px;
     }
 }
 
@@ -435,6 +549,55 @@ img{
     .flujo-categoria{
         position: relative;
         width: 45%;
+    }
+    /* click menu */
+    .content::after{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        content: '';
+        display: inline-block;
+        width: 100%;
+        height: 1000px;
+        background: rgba(0,0,0,0.4);
+        cursor: pointer;
+    }
+    /* menu desplegable */
+    .nav-menu{
+        height: 1000px;
+        position: absolute;
+        left: 0px; /* -52% */
+        z-index: 999;
+        display: block;
+        width: 50%;
+        background: #000;
+        -webkit-box-shadow: 6px 3px 19px -2px rgba(0,0,0,0.75);
+        -moz-box-shadow: 6px 3px 19px -2px rgba(0,0,0,0.75);
+        box-shadow: 6px 3px 19px -2px rgba(0,0,0,0.75);
+        transition: left 0.3s;
+    }
+    .left{
+        left: -52% !important;
+    }
+
+    .nav-menu .menu-navegation{
+        margin-top: 10px;
+    }
+    .nav-menu .menu-navegation ul{
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .nav-menu .menu-navegation ul li a{
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        border-bottom: 1px solid rgb(68, 68, 68);
+        color: #fff;
+        margin: 10px 20px;
     }
 
 }
@@ -514,6 +677,7 @@ img{
         position: relative;
         float: left;
         width: 50%;
+        height: 580px;
         margin: 15px 10px;
         box-sizing: border-box;
     }
@@ -521,4 +685,51 @@ img{
         position: relative;
         width: 45%;
     }
+    .nav-menu{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .nav-menu .menu-navegation{
+        display: inline-block;
+    }
+    .nav-menu .menu-navegation ul{
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+    .nav-menu .menu-navegation ul li{
+        float: left;
+    }
+    .nav-menu .menu-navegation ul li a{
+        display: inline-block;
+        text-decoration: none;
+        text-transform: uppercase;
+        /* border-bottom: 3px solid #fff; */
+        padding: 10px;
+        margin: 0 5px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 700;
+        color: #666;
+    }
+    .nav-menu .menu-navegation ul li a::after{
+        position: relative;
+        top: 5px;
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #16d3a1;
+        transition: width .3s;
+        /* border-bottom: 3px solid #16d3a1; */
+    }
+    .nav-menu .menu-navegation ul li a:hover::after{
+        width: 100%;
+    }
+    .menu{
+        visibility: hidden;
+    }
+
 }
