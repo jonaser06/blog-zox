@@ -5,6 +5,27 @@
     background: #000;
     color: #fff;
 }
+.fixedheader{
+    position: fixed;
+    z-index: 99;
+}
+.hashtags{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0.8rem;
+    margin: 0 5px;
+}
+.hashtags a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}
+.extra{
+    width: 100%;
+    text-align: center;
+}
+.extra .flujo .tag .pop-head{
+    font-size: 0.8rem;
+}
 .menu{
     width: 15%;
 }
@@ -165,10 +186,17 @@ img{
     width: 95%;
     text-align: center;
 }
+.flujo-content{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 20px;
+}
 .flujo-d{
     margin: 0px !important;
 }
-.tag{
+.tag, .tag-content{
     margin: 0;
 }
 .tag:before{
@@ -182,7 +210,7 @@ img{
     height: 1px;
     z-index: 0;
 }
-.pop-head{
+.pop-head, .pop-head-content{
     background: #ff005b;
     color: #fff;
     font-size: 1rem;
@@ -195,6 +223,37 @@ img{
     -ms-transform: skewX(-15deg);
     -o-transform: skewX(-15deg);
     transform: skewX(-15deg);
+}
+.pop-head-content{
+    font-size: 0.8rem !important;
+}
+.title-content{
+    box-sizing: border-box;
+    padding: 5px 13px;
+}
+h1{
+    margin: 0px;
+}
+
+.data-text{
+    box-sizing: border-box;
+    padding: 0px 13px;
+    font-size: 1.2rem;
+}
+
+.data-text p{
+    margin-top: 0px;
+}
+.legend{
+    text-align: right;
+    color: #666;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.img-src{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
 }
 .tendencia-item{
     display: inline-block;
@@ -337,8 +396,8 @@ img{
     }
     /* menu desplegable */
     .nav-menu{
-        height: 1000px;
-        position: absolute;
+        position: fixed;
+        top:50px;
         left: 0px; /* -52% */
         z-index: 999;
         display: block;
@@ -438,8 +497,8 @@ img{
     }
     /* menu desplegable */
     .nav-menu{
-        height: 1000px;
-        position: absolute;
+        position: fixed;
+        top:50px;
         left: 0px; /* -52% */
         z-index: 999;
         display: block;
@@ -564,8 +623,8 @@ img{
     }
     /* menu desplegable */
     .nav-menu{
-        height: 1000px;
-        position: absolute;
+        position: fixed;
+        top:50px;
         left: 0px; /* -52% */
         z-index: 999;
         display: block;
@@ -720,10 +779,10 @@ img{
         content: '';
         display: block;
         width: 0;
-        height: 2px;
+        height: 1px;
         background: #16d3a1;
         transition: width .3s;
-        /* border-bottom: 3px solid #16d3a1; */
+        border-bottom: 3px solid #16d3a1;
     }
     .nav-menu .menu-navegation ul li a:hover::after{
         width: 100%;

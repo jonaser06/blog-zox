@@ -4,12 +4,14 @@ var objBlog = {
     },
     menu: function(){
         var i=0;
+        var altura = $(".header").height();
         $(".icon-menu").on("click", function(e){
             e.preventDefault();
             if(i==0){
                 $(".fa-align-left").css("display","none");
                 $(".fa-times").css("display","inline-block");
                 $(".nav-menu").removeClass("left");
+                $(".nav-menu").css("min-height",$(window).height());
                 $(".after").addClass("content");
                 i++;
             }else{
@@ -29,7 +31,14 @@ var objBlog = {
             $(".nav-menu").addClass("left");
             i=0;
         });
-
+        
+        $(window).on("scroll", function(){
+            if($(window).scrollTop() > altura ){
+                $(".header").addClass("fixedheader");
+            }else{
+                $(".header").removeClass("fixedheader");
+            }
+        });
     }
 }
 
