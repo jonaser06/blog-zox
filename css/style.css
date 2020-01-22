@@ -797,4 +797,68 @@ h1{
         visibility: hidden;
     }
 
+    .interna-content{
+        position: relative;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0 120px;
+    }
+    .section-interna{
+        position: relative;
+        width: 70%;
+        float: left;
+    }
+    .sidebar{
+        position: relative;
+        width: 30%;
+        float: right;
+        box-sizing: border-box;
+        padding: 0 30px;
+        text-align: center;
+    }
+    .sidebar-fixed{
+        position: fixed;
+        right: 120px;
+    }
+    .sidebar-flow{
+        text-align: left;
+    }
+    .sidebar-item{
+        position: relative;
+        width: 100%;
+        height: 100px;
+    }
+    .sidebar-image{
+        position: relative;
+        width: 30%;
+        height: 90px;
+        float: left;
+    }
+    .sidebar-image img{
+        width: 100%;
+        height: 100%;
+    }
+    .sidebar-preview{
+        position: relative;
+        width: 70%;
+        float: right;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    .sidebar-preview h2{
+        margin: 0px;
+    }
+    .sidebar-category{
+        color: #666;
+        font-weight: bold;
+        font-size: 0.7rem;
+    }
+    .sidebar-fecha{
+        color: #ccc;
+        font-size: 0.7rem;
+    }
+    .sidebar-title{
+        font-size: 0.8rem;
+        color: #000;
+    }
 }
