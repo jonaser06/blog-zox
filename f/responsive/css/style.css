@@ -1,0 +1,135 @@
+/* 
+** Styles v1.0
+** By Jonathan N.
+*/
+
+header{
+    background: #009687;
+}
+.h-container{
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+}
+.h-container a {
+    text-decoration: none;
+}
+.title-header{
+    color: #fff;
+}
+.title-header:hover{
+    color: #fff;
+}
+.NavBar{
+    position: absolute;
+    background: #009687;
+    width: 100%;
+    z-index: 99;
+    height: 0px;
+    overflow: hidden;
+}
+.NavBar ul{
+    padding: 0px;
+    margin: 0px;
+}
+.NavBar ul li {
+    height: 50px;
+    padding: 0px 10px;
+    list-style: none;
+    box-sizing: border-box;
+    border-top: 1px solid #09ad9d;
+    line-height: 50px;
+    text-align: center;
+}
+.NavBar ul li:hover{
+    background: #09ad9d;
+}
+.NavBar ul li a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+.menu:hover{
+    color: #fff;
+}
+.menu{
+    position: absolute;
+    color: #fff;
+    right: 10px;
+}
+.portada{
+    position: relative;
+    width: 100%;
+}
+.portada img{
+    width: 100%;
+
+}
+.info{
+    width: 100%;
+}
+.info-item:first-child{
+    border: 0px;
+}
+.info-item{
+    text-align: center;
+    margin: 10px 0;
+    border-left: 1px solid #009687;
+}
+.info-item p{
+    margin: 0px;
+    line-height: 20px;
+}
+.info-item h5{
+    margin: 0px;
+}
+.fluid-feed{
+    width: 100%;
+    height: 110px;
+    position: relative;
+}
+.item-descripcion{
+    float: right;
+    width: 75%;
+    padding-left: 20px;
+}
+.item-empleo{
+    position: absolute;
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 100%;
+}
+.item-image{
+    position: relative;
+    float: left;
+    width: 25%;
+    height: 100%;
+}
+.item-image img{
+    width: 100%;
+    height: 100%;
+}
+.flecha{
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    float: right;
+    right: 10px;
+}
+.item-empleo h4{
+    margin: 0px;
+    font-family: -webkit-body;
+}
+@media (min-width: 0px) and (max-width: 600px) {
+    .portada{
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+    }
+    .portada img{
+        position: relative;
+        width: 200%;
+        height: 100%;
+        left: -50%;
+    }
+}

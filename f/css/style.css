@@ -385,6 +385,9 @@ h1{
     img{
         width: 100%;
     }
+    .sidebar{
+        display: none;
+    }
     /* click menu */
     .content::after{
         position: absolute;
@@ -437,7 +440,9 @@ h1{
 }
 /* Para 480px a 600px */
 @media only screen and (max-width: 600px) and (min-width: 480px) { 
-
+    .sidebar{
+        display: none;
+    }
     .gridportada{
         width: 100%;
         box-sizing: border-box;
@@ -539,7 +544,9 @@ h1{
 
 /* Para 601px a 900px */
 @media only screen and (max-width: 900px) and (min-width: 601px) {
-
+    .sidebar{
+        display: none;
+    }
     .gridportada{
         position: relative;
         width: 60%;
@@ -860,5 +867,9 @@ h1{
     .sidebar-title{
         font-size: 0.8rem;
         color: #000;
+    }
+    .after{
+        padding: 0 120px;
+        box-sizing: border-box;
     }
 }
