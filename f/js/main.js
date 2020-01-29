@@ -1,3 +1,20 @@
+var obkk = {
+    ini: function(){
+        obkk.menu();
+        obkk.footer();
+    },
+    menu:function(){
+
+    },
+    footer:function(){
+
+    }
+};
+
+$(document).ready(function(){
+    obkk.ini();
+});
+
 var objBlog = {
     init: function(){
         objBlog.menu();
